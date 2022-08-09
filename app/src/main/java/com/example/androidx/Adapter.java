@@ -2,6 +2,8 @@ package com.example.androidx;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -56,7 +58,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
                 alerBuilder.setItems(items, (dialog, which) -> {
                     switch (which) {
                         case 0:
-//                            Toast.makeText(v.getContext(), "Note", Toast.LENGTH_SHORT).show();
+                            Bundle bundle = new Bundle();
+                            Intent intent = new Intent(v.getContext(), UpdateNote.class);
+
+                            intent.putExtra("data_title", note.getTitle());
+                            v.getContext().startActivity(intent);
 
                             break;
                         case 1:
