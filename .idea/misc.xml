@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/activity_add_note.xml" value="0.1" />
+        <entry key="..\:/Android/Project/Androidx/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2525" />
+        <entry key="..\:/Android/Project/Androidx/app/src/main/res/drawable/ic_baseline_fingerprint_24.xml" value="0.2525" />
+        <entry key="..\:/Android/Project/Androidx/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.2525" />
+        <entry key="..\:/Android/Project/Androidx/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2525" />
+        <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/activity_add_note.xml" value="0.25" />
         <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/activity_update_note.xml" value="0.1" />
-        <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/item_view.xml" value="0.1" />
+        <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/activity_update_note.xml" value="0.22" />
+        <entry key="..\:/Android/Project/Androidx/app/src/main/res/layout/item_view.xml" value="0.33" />
         <entry key="..\:/Android/Project/Androidx/app/src/main/res/menu/popup_menu.xml" value="0.36666666666666664" />
       </map>
     </option>

@@ -28,19 +28,21 @@ public class HomeActivity extends AppCompatActivity {
         addNoteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,AddNote.class));
+                startActivity(new Intent(HomeActivity.this, AddNote.class));
             }
         });
 
         Realm.init(getApplicationContext());
         Realm realm = Realm.getDefaultInstance();
+//        realm.close();
+//        Realm.deleteRealm(realm.getConfiguration());
 
         RealmResults<Note> notesList = realm.where(Note.class).findAll();
 
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Adapter myAdapter = new Adapter(getApplicationContext(),notesList);
+        Adapter myAdapter = new Adapter(getApplicationContext(), notesList);
         recyclerView.setAdapter(myAdapter);
 
         notesList.addChangeListener(new RealmChangeListener<RealmResults<Note>>() {

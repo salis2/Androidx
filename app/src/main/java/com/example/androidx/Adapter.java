@@ -44,6 +44,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         Note note = notesList.get(position);
         holder.titleOutput.setText(note.getTitle());
         holder.descriptionOutput.setText(note.getDescription());
+        holder.locationOutput.setText(note.getLocation());
 
         String formatedTime = DateFormat.getDateTimeInstance().format(note.getCreatedTime());
         holder.timeOutput.setText(formatedTime);
@@ -86,6 +87,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
     @Override
     public int getItemCount() {
+
         return notesList.size();
     }
 
@@ -94,12 +96,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         TextView titleOutput;
         TextView descriptionOutput;
         TextView timeOutput;
+        TextView locationOutput;
         RelativeLayout itemList;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             titleOutput = itemView.findViewById(R.id.titleoutput);
             descriptionOutput = itemView.findViewById(R.id.descriptionoutput);
+            locationOutput = itemView.findViewById(R.id.locationoutput);
             timeOutput = itemView.findViewById(R.id.timeoutput);
             itemList = itemView.findViewById(R.id.relative);
         }
